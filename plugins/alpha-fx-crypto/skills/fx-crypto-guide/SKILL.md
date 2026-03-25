@@ -1,6 +1,6 @@
 ---
 name: fx-crypto-guide
-description: Routes forex and cryptocurrency requests to the correct skill within the alpha-vantage-fx-crypto plugin.
+description: Routes forex and cryptocurrency requests to the correct skill within the alpha-fx-crypto plugin.
 metadata:
   version: "1.0.0"
 ---
@@ -57,4 +57,4 @@ A successful FX/crypto response: (1) shows the rate in both directions, (2) incl
 
 ## Cross-Plugin Note
 
-For technical indicator overlays (RSI, MACD, BBANDS on FX/crypto pairs), the assistant can call indicator tools directly via the Alpha Vantage MCP server — these tools work with any symbol type. For economic context (Fed rate, GDP), the user should install alpha-vantage-macro.
+For technical indicator overlays (RSI, MACD, BBANDS on FX/crypto pairs), the assistant can call indicator tools directly via the Alpha Vantage MCP server — these tools work with any symbol type. For economic context (Fed rate, GDP), the user should install alpha-macro.

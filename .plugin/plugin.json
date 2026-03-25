@@ -1,12 +1,12 @@
 {
-  "name": "alpha-vantage-toolkit",
+  "name": "alpha-market-skills",
   "version": "1.0.0",
-  "description": "Financial market analysis toolkit powered by Alpha Vantage — 3 plugins covering equities, macro economics, forex, and crypto through free-tier endpoints.",
+  "description": "Financial market analysis skills powered by Alpha Vantage — 3 plugins covering equities, macro economics, forex, and crypto through free-tier endpoints.",
   "author": {
     "name": "Berk Tavsan"
   },
   "license": "MIT",
-  "repository": "https://github.com/cberktavsan/alpha-vantage-toolkit",
+  "repository": "https://github.com/cberktavsan/alpha-market-skills",
   "keywords": [
     "finance",
     "stocks",

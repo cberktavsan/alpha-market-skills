@@ -1,6 +1,6 @@
 ---
 name: equities-guide
-description: Routes equity market requests to the correct skill within the alpha-vantage-equities plugin.
+description: Routes equity market requests to the correct skill within the alpha-equities plugin.
 metadata:
   version: "1.0.0"
 ---
@@ -63,4 +63,4 @@ A successful equities response: (1) answers the user's question with specific nu
 
 ## Cross-Plugin Note
 
-For commodity prices, forex rates, or economic indicators, the user should install the corresponding Alpha Vantage plugin (alpha-vantage-macro or alpha-vantage-fx-crypto).
+For commodity prices, forex rates, or economic indicators, the user should install the corresponding plugin (alpha-macro or alpha-fx-crypto).

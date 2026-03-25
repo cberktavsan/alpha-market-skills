@@ -1,5 +1,5 @@
 ---
-name: alpha-vantage-toolkit
+name: alpha-market-skills
 description: >
   Collection of 3 financial analysis plugins powered by Alpha Vantage free-tier API.
   Install individual plugins for focused analysis or the full collection for comprehensive market coverage.
@@ -8,7 +8,7 @@ metadata:
   collection: true
 ---
 
-# Alpha Vantage Toolkit
+# Alpha Market Skills
 
 A collection of 3 independently installable plugins for financial market analysis using the Alpha Vantage MCP server.
 
@@ -16,9 +16,9 @@ A collection of 3 independently installable plugins for financial market analysi
 
 | Plugin | Skills | What It Covers |
 |--------|--------|----------------|
-| **alpha-vantage-equities** | stock-analysis, fundamental-analysis, technical-analysis, news-sentiment | Stock prices, company financials, 40+ technical indicators, market news and sentiment |
-| **alpha-vantage-macro** | economic-dashboard, commodity-tracker, market-overview | US economic indicators (GDP, CPI, unemployment), energy/metals/agriculture prices, market movers |
-| **alpha-vantage-fx-crypto** | forex-analysis, crypto-analysis | Currency exchange rates, crypto prices and historical trends |
+| **alpha-equities** | stock-analysis, fundamental-analysis, technical-analysis, news-sentiment | Stock prices, company financials, 40+ technical indicators, market news and sentiment |
+| **alpha-macro** | economic-dashboard, commodity-tracker, market-overview | US economic indicators (GDP, CPI, unemployment), energy/metals/agriculture prices, market movers |
+| **alpha-fx-crypto** | forex-analysis, crypto-analysis | Currency exchange rates, crypto prices and historical trends |
 
 ## Setup
 

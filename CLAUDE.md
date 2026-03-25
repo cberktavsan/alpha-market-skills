@@ -2,19 +2,19 @@
 
 ## What This Repository Is
 
-Alpha Vantage Toolkit — a mono-repo containing 3 marketplace plugins for financial market analysis, powered by the Alpha Vantage MCP server. Each plugin is independently installable.
+Alpha Market Skills — a mono-repo containing 3 marketplace plugins for financial market analysis, powered by the Alpha Vantage MCP server. Each plugin is independently installable.
 
 ## Repository Structure
 
 ```
-alpha-vantage-toolkit/
+alpha-market-skills/
   .claude-plugin/marketplace.json   — Marketplace manifest (3 plugins)
   .plugin/plugin.json               — Open Plugins format metadata
   SKILL.md                          — Collection-level metadata
   plugins/
-    alpha-vantage-equities/         — Stocks, fundamentals, technicals, news
-    alpha-vantage-macro/            — Economic indicators, commodities, market overview
-    alpha-vantage-fx-crypto/        — Forex, cryptocurrency
+    alpha-equities/                 — Stocks, fundamentals, technicals, news
+    alpha-macro/                    — Economic indicators, commodities, market overview
+    alpha-fx-crypto/                — Forex, cryptocurrency
 ```
 
 Each plugin contains: `.mcp.json` + `skills/` with an orchestrator guide and specialized skills.
@@ -24,7 +24,7 @@ Each plugin contains: `.mcp.json` + `skills/` with an orchestrator guide and spe
 All plugins connect to the same Alpha Vantage MCP server.
 - **URL**: `https://mcp.alphavantage.co/mcp`
 - **Auth**: `ALPHA_VANTAGE_API_KEY` environment variable
-- **Tools**: 106 available, ~55 used by this toolkit
+- **Tools**: 106 available, ~55 used by this collection
 
 ## Free Tier Constraints
 
@@ -36,9 +36,9 @@ All plugins connect to the same Alpha Vantage MCP server.
 
 | Plugin | Skills | Domain |
 |--------|--------|--------|
-| alpha-vantage-equities | equities-guide, stock-analysis, fundamental-analysis, technical-analysis, news-sentiment | Stocks, company financials, 40+ indicators, market news |
-| alpha-vantage-macro | macro-guide, economic-dashboard, commodity-tracker, market-overview | GDP, CPI, Fed rate, oil, gold, top movers |
-| alpha-vantage-fx-crypto | fx-crypto-guide, forex-analysis, crypto-analysis | Currency pairs, crypto prices and trends |
+| alpha-equities | equities-guide, stock-analysis, fundamental-analysis, technical-analysis, news-sentiment | Stocks, company financials, 40+ indicators, market news |
+| alpha-macro | macro-guide, economic-dashboard, commodity-tracker, market-overview | GDP, CPI, Fed rate, oil, gold, top movers |
+| alpha-fx-crypto | fx-crypto-guide, forex-analysis, crypto-analysis | Currency pairs, crypto prices and trends |
 
 ## Skill Authoring Rules
 

@@ -1,4 +1,4 @@
-# Alpha Vantage Toolkit
+# Alpha Market Skills
 
 A collection of 3 financial market analysis plugins for Claude, powered by [Alpha Vantage](https://www.alphavantage.co/). Each plugin is independently installable from the Claude marketplace.
 
@@ -6,16 +6,16 @@ A collection of 3 financial market analysis plugins for Claude, powered by [Alph
 
 | Plugin | Skills | Coverage |
 |--------|--------|----------|
-| **alpha-vantage-equities** | stock-analysis, fundamental-analysis, technical-analysis, news-sentiment | Stock prices, company financials, 40+ technical indicators, market news and insider activity |
-| **alpha-vantage-macro** | economic-dashboard, commodity-tracker, market-overview | US economic indicators (GDP, CPI, unemployment, Fed rate), energy/metals/agriculture prices, top gainers/losers |
-| **alpha-vantage-fx-crypto** | forex-analysis, crypto-analysis | Currency exchange rates, historical FX data, cryptocurrency prices and trends |
+| **alpha-equities** | stock-analysis, fundamental-analysis, technical-analysis, news-sentiment | Stock prices, company financials, 40+ technical indicators, market news and insider activity |
+| **alpha-macro** | economic-dashboard, commodity-tracker, market-overview | US economic indicators (GDP, CPI, unemployment, Fed rate), energy/metals/agriculture prices, top gainers/losers |
+| **alpha-fx-crypto** | forex-analysis, crypto-analysis | Currency exchange rates, historical FX data, cryptocurrency prices and trends |
 
 ## Installation
 
 ### From Claude Marketplace
 
 ```
-/plugin marketplace add cberktavsan/alpha-vantage-toolkit
+/plugin marketplace add cberktavsan/alpha-market-skills
 ```
 
 Then enable the plugin(s) you need.

@@ -1,6 +1,6 @@
 ---
 name: macro-guide
-description: Routes macroeconomic, commodity, and market overview requests to the correct skill within the alpha-vantage-macro plugin.
+description: Routes macroeconomic, commodity, and market overview requests to the correct skill within the alpha-macro plugin.
 metadata:
   version: "1.0.0"
 ---
@@ -60,4 +60,4 @@ A successful macro response: (1) provides specific data values with dates, (2) s
 
 ## Cross-Plugin Note
 
-For stock prices, technical analysis, or company fundamentals, the user should install alpha-vantage-equities. For forex or crypto data, install alpha-vantage-fx-crypto.
+For stock prices, technical analysis, or company fundamentals, the user should install alpha-equities. For forex or crypto data, install alpha-fx-crypto.
