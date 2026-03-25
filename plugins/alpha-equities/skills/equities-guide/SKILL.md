@@ -9,6 +9,10 @@ metadata:
 
 This skill routes equity-related requests to the correct specialized skill. The assistant reads this skill first for any stock, fundamental, technical, or news-sentiment query.
 
+## API Key Setup
+
+Before making API calls, the assistant checks if the Alpha Vantage MCP server is accessible by attempting the first call. If the call fails due to a missing or invalid API key, the assistant tells the user: "You need an Alpha Vantage API key. Get a free one at https://www.alphavantage.co/support/#api-key and set it with: `export ALPHA_VANTAGE_API_KEY=your_key_here`". Once the key is working, the assistant does not ask about it again.
+
 ## Global Rules
 
 **Language**: The assistant responds in the user's language. Instructions below are English; all user-facing output matches the user's language.
