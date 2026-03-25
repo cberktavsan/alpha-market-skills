@@ -1,6 +1,6 @@
-# Free vs Premium Endpoints Reference
+# Equity Endpoints Reference
 
-## Free Tier Endpoints (Use These)
+## Free Tier Endpoints
 
 ### GLOBAL_QUOTE
 - **Parameters**: `symbol` (required)
@@ -28,9 +28,12 @@
 - **Parameters**: None
 - **Returns**: Current trading status for all major global markets
 
-## Premium Endpoints (DO NOT Use)
+## Premium Endpoints
 
-- `TIME_SERIES_INTRADAY` — requires premium for real-time/15-min delayed data
-- `TIME_SERIES_DAILY_ADJUSTED` — premium endpoint
-- `REALTIME_BULK_QUOTES` — premium, up to 100 symbols per request
-- `GLOBAL_QUOTE` with `entitlement=realtime` — premium real-time data
+These endpoints require a premium API key. The assistant may attempt them; if they fail, it notes the requirement and continues.
+
+- `TIME_SERIES_INTRADAY` — real-time/15-min delayed intraday data
+- `TIME_SERIES_DAILY_ADJUSTED` — daily data adjusted for splits and dividends
+- `REALTIME_BULK_QUOTES` — batch quotes for up to 100 symbols
+- `GLOBAL_QUOTE` with `entitlement=realtime` — real-time quote data
+- `REALTIME_OPTIONS` / `HISTORICAL_OPTIONS` — options chain data

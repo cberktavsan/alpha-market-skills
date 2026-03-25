@@ -9,7 +9,7 @@ metadata:
 
 The assistant accesses market news, sentiment data, earnings transcripts, and institutional activity from Alpha Vantage.
 
-> **Global rules (language, rate limits, free-tier constraints, output handling) are defined in this plugin's orchestrator and apply here.**
+> **Global rules (language, rate limits, API limits, output handling) are defined in this plugin's orchestrator and apply here.**
 
 ## Available Tools
 

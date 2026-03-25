@@ -9,7 +9,7 @@ metadata:
 
 The assistant analyzes cryptocurrency prices and trends using Alpha Vantage crypto endpoints.
 
-> **Global rules (language, rate limits, free-tier constraints, output handling) are defined in this plugin's orchestrator and apply here.**
+> **Global rules (language, rate limits, API limits, output handling) are defined in this plugin's orchestrator and apply here.**
 
 ## Available Tools
 

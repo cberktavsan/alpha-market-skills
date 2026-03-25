@@ -13,7 +13,7 @@ This skill routes equity-related requests to the correct specialized skill. The 
 
 **Language**: The assistant responds in the user's language. Instructions below are English; all user-facing output matches the user's language.
 
-**Free Tier Only**: ~25 calls/day, ~5/min. NEVER call premium endpoints: `TIME_SERIES_INTRADAY`, `TIME_SERIES_DAILY_ADJUSTED`, `REALTIME_BULK_QUOTES`, `REALTIME_OPTIONS`, `HISTORICAL_OPTIONS`, `VWAP`, `FX_INTRADAY`, `DIGITAL_CURRENCY_INTRADAY`.
+**API Limits**: Free tier allows ~25 calls/day. Premium users have higher limits (no daily cap). The assistant may call any Alpha Vantage endpoint. If a call returns a premium-required error, the assistant continues the analysis with the remaining data and lists the failed premium calls at the end of the response with a link to https://www.alphavantage.co/premium/.
 
 **Rate Budget**: The assistant states the expected API call count before executing multi-step workflows. Single query = 1-2 calls. Standard analysis = 3-5 calls. Deep analysis = 6-10 calls. Comprehensive report = 10-15 calls (warn the user first).
 
@@ -23,7 +23,7 @@ This skill routes equity-related requests to the correct specialized skill. The 
 
 **Output Handling**: The assistant extracts only the needed subset from time-series responses (latest 5-10 data points). Raw multi-page JSON is never dumped into the conversation. Financial statement responses are summarized to key metrics only.
 
-**Disclaimer**: The assistant ends every analysis with: "Data may be delayed (free tier). This is data-driven analysis, not investment advice. Past performance does not guarantee future results."
+**Disclaimer**: The assistant ends every analysis with: "This is data-driven analysis, not investment advice. Past performance does not guarantee future results."
 
 ## Skill Routing Table
 
@@ -55,7 +55,7 @@ For multi-skill workflow details, the assistant refers to `references/workflows.
 - **Rate limit hit**: The assistant informs the user and suggests waiting 1 minute or continuing next session.
 - **Symbol not found**: The assistant uses `SYMBOL_SEARCH` via stock-analysis to find the correct ticker.
 - **Empty response**: The assistant explains the endpoint may lack data for that symbol/date and suggests alternatives.
-- **Premium error**: The assistant skips that endpoint, notes it to the user, and continues with remaining data.
+- **Premium error**: The assistant completes the analysis with all available data first, then appends at the end: "The following calls require a premium API key: [list]. Upgrade at https://www.alphavantage.co/premium/".
 
 ## Success Criteria
 

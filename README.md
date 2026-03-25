@@ -40,9 +40,14 @@ To get the latest version of installed plugins:
 
 If updates are not detected, restart your Claude Code session and try again.
 
-## Rate Limits
+## API Limits
 
-Free tier allows approximately **25 API calls per day** and **5 per minute**. Each plugin's orchestrator warns before executing multi-step analyses that consume multiple calls.
+| Tier | Daily Limit | Per-Minute Limit |
+|------|-------------|------------------|
+| Free | ~25 calls/day | — |
+| Premium | No daily cap | 75 - 1200 calls/min (by plan) |
+
+Each plugin's orchestrator warns before executing multi-step analyses that consume multiple calls.
 
 | Analysis Type | Approximate Calls |
 |---------------|-------------------|
@@ -51,17 +56,21 @@ Free tier allows approximately **25 API calls per day** and **5 per minute**. Ea
 | Deep analysis | 6-10 |
 | Comprehensive report | 10-15 |
 
-## Free Tier Limitations
+## Free vs Premium Endpoints
 
-These premium-only endpoints are **not used** by any plugin:
+All plugins work with both free and premium API keys. Some endpoints require premium:
 
-- `TIME_SERIES_INTRADAY` (real-time intraday data)
-- `TIME_SERIES_DAILY_ADJUSTED` (adjusted daily data)
-- `REALTIME_BULK_QUOTES` (batch real-time quotes)
-- `REALTIME_OPTIONS` / `HISTORICAL_OPTIONS` (options data)
-- `VWAP` (volume-weighted average price)
-- `FX_INTRADAY` (intraday forex)
-- `DIGITAL_CURRENCY_INTRADAY` (intraday crypto)
+| Endpoint | Tier | Description |
+|----------|------|-------------|
+| `TIME_SERIES_INTRADAY` | Premium | Real-time intraday data |
+| `TIME_SERIES_DAILY_ADJUSTED` | Premium | Adjusted daily data |
+| `REALTIME_BULK_QUOTES` | Premium | Batch real-time quotes |
+| `REALTIME_OPTIONS` / `HISTORICAL_OPTIONS` | Premium | Options data |
+| `VWAP` | Premium | Volume-weighted average price |
+| `FX_INTRADAY` | Premium | Intraday forex |
+| `DIGITAL_CURRENCY_INTRADAY` | Premium | Intraday crypto |
+
+If a premium endpoint fails, the plugin continues with available data and notes which calls require an upgrade. See [Alpha Vantage Premium](https://www.alphavantage.co/premium/) for plans.
 
 ## Language Support
 

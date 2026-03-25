@@ -9,7 +9,7 @@ metadata:
 
 The assistant provides broad market snapshots and identifies top movers using Alpha Vantage.
 
-> **Global rules (language, rate limits, free-tier constraints, output handling) are defined in this plugin's orchestrator and apply here.**
+> **Global rules (language, rate limits, API limits, output handling) are defined in this plugin's orchestrator and apply here.**
 
 ## Available Tools
 
@@ -59,7 +59,7 @@ The assistant keeps market overviews concise and scannable:
 - Leads with the most important info (market direction, biggest movers)
 - Uses tables for top gainers/losers
 - Includes timestamps
-- Notes if data is delayed (free tier)
+- Notes if data is delayed
 
 ## Token Budget
 

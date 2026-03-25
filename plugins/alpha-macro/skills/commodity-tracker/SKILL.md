@@ -9,7 +9,7 @@ metadata:
 
 The assistant tracks and analyzes commodity prices across energy, metals, and agriculture using Alpha Vantage.
 
-> **Global rules (language, rate limits, free-tier constraints, output handling) are defined in this plugin's orchestrator and apply here.**
+> **Global rules (language, rate limits, API limits, output handling) are defined in this plugin's orchestrator and apply here.**
 
 ## Available Tools
 

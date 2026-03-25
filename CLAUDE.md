@@ -26,10 +26,10 @@ All plugins connect to the same Alpha Vantage MCP server.
 - **Auth**: `ALPHA_VANTAGE_API_KEY` environment variable
 - **Tools**: 106 available, ~55 used by this collection
 
-## Free Tier Constraints
+## API Limits
 
-- ~25 API calls/day, ~5 calls/minute
-- Premium endpoints NOT used: `TIME_SERIES_INTRADAY`, `TIME_SERIES_DAILY_ADJUSTED`, `REALTIME_BULK_QUOTES`, `REALTIME_OPTIONS`, `HISTORICAL_OPTIONS`, `VWAP`, `FX_INTRADAY`, `DIGITAL_CURRENCY_INTRADAY`
+- Free tier: ~25 API calls/day. Premium: no daily cap (75-1200 calls/min by plan)
+- All endpoints are available. Premium endpoints that fail on free tier are noted to the user with an upgrade link
 - Unused utility tools: `PING`, `ADD_TWO_NUMBERS`, `SEARCH`, `FETCH`
 
 ## Plugin Boundaries

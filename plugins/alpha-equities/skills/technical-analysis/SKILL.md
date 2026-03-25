@@ -9,7 +9,7 @@ metadata:
 
 The assistant performs comprehensive technical analysis using 40+ indicators from Alpha Vantage MCP.
 
-> **Global rules (language, rate limits, free-tier constraints, output handling) are defined in this plugin's orchestrator and apply here.**
+> **Global rules (language, rate limits, API limits, output handling) are defined in this plugin's orchestrator and apply here.**
 
 ## Indicator Tiers
 
@@ -50,7 +50,7 @@ Cycle: `HT_TRENDLINE`, `HT_SINE`, `HT_TRENDMODE`, `HT_DCPERIOD`, `HT_DCPHASE`, `
 
 Most indicators accept:
 - `symbol` (required): Ticker symbol
-- `interval` (required): `daily`, `weekly`, `monthly` (avoid `1min`-`60min` — those require premium)
+- `interval` (required): `daily`, `weekly`, `monthly` (intraday intervals `1min`-`60min` are also available for premium users)
 - `time_period` (required for most): Lookback period (e.g., 14 for RSI, 20 for SMA)
 - `series_type` (required for some): `close`, `open`, `high`, `low`
 
@@ -106,7 +106,7 @@ The assistant combines multiple workflows above, limiting to 6-8 indicator calls
 ## Gotchas
 
 - **Indicator responses return 100+ data points**: The assistant extracts only the most recent 1-3 values for signal interpretation. Never dumps the full series.
-- **Intraday intervals (1min-60min) require premium**: The assistant always uses `daily`, `weekly`, or `monthly`. If the user asks for intraday indicators, it explains the limitation.
+- **Intraday intervals (1min-60min) may require premium**: The assistant defaults to `daily`, `weekly`, or `monthly`. If the user requests intraday and the call fails, the assistant notes that intraday requires a premium key and falls back to daily.
 - **MACD has three series**: `MACD`, `MACD_Signal`, and `MACD_Hist`. All three are needed for proper interpretation.
 - **RSI at exactly 50 is neutral**: Not a signal. Only values above 70 or below 30 are flagged.
 - **BBANDS with insufficient data**: If the symbol has fewer trading days than the period, the response will be empty. The assistant falls back to a shorter period.

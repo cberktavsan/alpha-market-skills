@@ -1,6 +1,6 @@
 ---
 name: stock-analysis
-description: Retrieves stock prices, quotes, historical data, and symbol lookups via Alpha Vantage free-tier equity endpoints.
+description: Retrieves stock prices, quotes, historical data, and symbol lookups via Alpha Vantage equity endpoints.
 metadata:
   version: "1.0.0"
 ---
@@ -9,7 +9,7 @@ metadata:
 
 The assistant provides stock price data, quotes, and equity market analysis using Alpha Vantage MCP tools.
 
-> **Global rules (language, rate limits, free-tier constraints, output handling) are defined in this plugin's orchestrator and apply here.**
+> **Global rules (language, rate limits, API limits, output handling) are defined in this plugin's orchestrator and apply here.**
 
 ## Available Tools
 
