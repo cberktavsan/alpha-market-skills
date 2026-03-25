@@ -28,6 +28,18 @@ Then enable the plugin(s) you need.
    export ALPHA_VANTAGE_API_KEY=your_api_key_here
    ```
 
+## Updating
+
+To get the latest version of installed plugins:
+
+```
+/plugin update alpha-equities@alpha-market-skills
+/plugin update alpha-macro@alpha-market-skills
+/plugin update alpha-fx-crypto@alpha-market-skills
+```
+
+If updates are not detected, restart your Claude Code session and try again.
+
 ## Rate Limits
 
 Free tier allows approximately **25 API calls per day** and **5 per minute**. Each plugin's orchestrator warns before executing multi-step analyses that consume multiple calls.
