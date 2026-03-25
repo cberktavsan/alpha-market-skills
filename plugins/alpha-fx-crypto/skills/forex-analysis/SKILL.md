@@ -19,6 +19,7 @@ The assistant analyzes currency pairs and exchange rates using Alpha Vantage for
 | `FX_DAILY` | Daily OHLC for a currency pair |
 | `FX_WEEKLY` | Weekly OHLC for a currency pair |
 | `FX_MONTHLY` | Monthly OHLC for a currency pair |
+| `FX_INTRADAY` | Intraday OHLC at 1/5/15/30/60 min intervals *(premium)* |
 
 ## Currency Codes
 

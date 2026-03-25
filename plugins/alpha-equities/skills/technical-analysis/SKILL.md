@@ -45,6 +45,7 @@ Trend strength: `ADXR`, `DX`, `PLUS_DI`, `MINUS_DI`, `PLUS_DM`, `MINUS_DM`
 Volatility: `NATR`, `TRANGE`
 Volume: `AD`, `ADOSC`
 Cycle: `HT_TRENDLINE`, `HT_SINE`, `HT_TRENDMODE`, `HT_DCPERIOD`, `HT_DCPHASE`, `HT_PHASOR`
+Premium: `VWAP` (volume-weighted average price — requires premium API key)
 
 ## Common Parameters
 

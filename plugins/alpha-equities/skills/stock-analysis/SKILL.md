@@ -23,6 +23,11 @@ The assistant provides stock price data, quotes, and equity market analysis usin
 | `TIME_SERIES_MONTHLY_ADJUSTED` | Monthly with adjusted close + dividends |
 | `SYMBOL_SEARCH` | Find ticker symbols by keyword |
 | `MARKET_STATUS` | Global market open/close status |
+| `TIME_SERIES_INTRADAY` | Intraday OHLCV at 1/5/15/30/60 min intervals *(premium)* |
+| `TIME_SERIES_DAILY_ADJUSTED` | Daily OHLCV adjusted for splits and dividends *(premium)* |
+| `REALTIME_BULK_QUOTES` | Batch real-time quotes for up to 100 symbols *(premium)* |
+| `REALTIME_OPTIONS` | Real-time options chain data *(premium)* |
+| `HISTORICAL_OPTIONS` | Historical options chain data *(premium)* |
 
 ## Workflows
 

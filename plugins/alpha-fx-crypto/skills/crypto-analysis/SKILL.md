@@ -19,6 +19,7 @@ The assistant analyzes cryptocurrency prices and trends using Alpha Vantage cryp
 | `DIGITAL_CURRENCY_DAILY` | Daily OHLCV in both crypto and fiat terms |
 | `DIGITAL_CURRENCY_WEEKLY` | Weekly OHLCV |
 | `DIGITAL_CURRENCY_MONTHLY` | Monthly OHLCV |
+| `DIGITAL_CURRENCY_INTRADAY` | Intraday OHLCV at 1/5/15/30/60 min intervals *(premium)* |
 
 ## Common Crypto Symbols
 
