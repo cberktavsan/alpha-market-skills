@@ -1,0 +1,12 @@
+{
+  "name": "alpha-vantage-toolkit",
+  "owner": "Berk Tavsan",
+  "email": "c.berktavsan@gmail.com",
+  "version": "1.0.0",
+  "description": "Financial market analysis toolkit powered by Alpha Vantage — equities, macro economics, forex, and crypto analysis through free-tier endpoints.",
+  "plugins": [
+    { "name": "alpha-vantage-equities", "strict": false },
+    { "name": "alpha-vantage-macro", "strict": false },
+    { "name": "alpha-vantage-fx-crypto", "strict": false }
+  ]
+}
