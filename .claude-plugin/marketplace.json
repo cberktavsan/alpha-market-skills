@@ -1,12 +1,34 @@
 {
   "name": "alpha-market-skills",
-  "owner": "Berk Tavsan",
-  "email": "c.berktavsan@gmail.com",
-  "version": "1.0.0",
-  "description": "Financial market analysis skills powered by Alpha Vantage — equities, macro economics, forex, and crypto analysis through free-tier endpoints.",
+  "owner": {
+    "name": "Berk Tavsan",
+    "email": "c.berktavsan@gmail.com"
+  },
+  "metadata": {
+    "description": "Financial market analysis skills powered by Alpha Vantage — equities, macro economics, forex, and crypto.",
+    "version": "1.0.0"
+  },
   "plugins": [
-    { "name": "alpha-equities", "strict": false },
-    { "name": "alpha-macro", "strict": false },
-    { "name": "alpha-fx-crypto", "strict": false }
+    {
+      "name": "alpha-equities",
+      "source": "./plugins/alpha-equities",
+      "description": "Stock prices, company fundamentals, 40+ technical indicators, and market news/sentiment via Alpha Vantage",
+      "version": "1.0.0",
+      "strict": false
+    },
+    {
+      "name": "alpha-macro",
+      "source": "./plugins/alpha-macro",
+      "description": "US economic indicators (GDP, CPI, Fed rate), commodity prices (oil, gold, agriculture), and market movers via Alpha Vantage",
+      "version": "1.0.0",
+      "strict": false
+    },
+    {
+      "name": "alpha-fx-crypto",
+      "source": "./plugins/alpha-fx-crypto",
+      "description": "Forex currency pairs and cryptocurrency prices/trends via Alpha Vantage",
+      "version": "1.0.0",
+      "strict": false
+    }
   ]
 }
